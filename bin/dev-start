@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ -z "$PORT" ]; then
+  PORT=3000
+fi
+
+foreman start -f Procfile.dev -p $PORT

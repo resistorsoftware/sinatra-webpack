@@ -1,0 +1,3 @@
+web: bundle exec shotgun
+webpack: npm run start
+sass: sass --watch sass:public

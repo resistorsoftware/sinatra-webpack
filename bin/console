@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+puts 'Loading environment...'
+require_relative '../config/environment'
+
+load Gem.bin_path('pry', 'pry')
+

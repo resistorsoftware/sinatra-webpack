@@ -1,0 +1,51 @@
+AllCops:
+  TargetRubyVersion: 2.5
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+Layout/TrailingBlankLines:
+  EnforcedStyle: final_blank_line
+Layout/IndentHash:
+  EnforcedStyle: consistent
+Layout/AlignHash:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    default: '[]'
+    '%i': '[]'
+    '%w': '[]'
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always
+Style/NumericLiterals:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+  # To make it possible to copy or click on URIs in the code, we allow lines
+  # containing a URI to be longer than Max.
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+  # The IgnoreCopDirectives option causes the LineLength rule to ignore cop
+  # directives like '# rubocop: enable ...' when calculating a line's length.
+  IgnoreCopDirectives: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ParameterLists:
+  CountKeywordArgs: false
+
